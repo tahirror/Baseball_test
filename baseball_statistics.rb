@@ -14,10 +14,10 @@ module Baseball
     team_slugging_percentage(batters, {:team_id => "HOU", :year_id => "2010"} )
 
     triple_crown_header
-    triple_crown_winner(batters, {:year_id => "2010", :league => "HOU", :limit => 400} )
-    triple_crown_winner(batters, {:year_id => "2010", :league => "HOU", :limit => 400} )
-    triple_crown_winner(batters, {:year_id => "2011", :league => "RUG", :limit => 400} )
-    triple_crown_winner(batters, {:year_id => "2011", :league => "RUG", :limit => 400} )
+    triple_crown_winner(batters, {:year_id => "2011", :league => "AL", :limit => 400} )
+    triple_crown_winner(batters, {:year_id => "2011", :league => "NL", :limit => 400} )
+    triple_crown_winner(batters, {:year_id => "2012", :league => "AL", :limit => 400} )
+    triple_crown_winner(batters, {:year_id => "2012", :league => "NL", :limit => 400} )
   end
 
   def self.load_player_data
