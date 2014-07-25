@@ -13,7 +13,6 @@ module Baseball
     most_improved_batting_average(batters, {:base_year => "2009", :compare_year => "2010", :limit_at_bats => 200} )
     team_slugging_percentage(batters, {:team_id => "HOU", :year_id => "2010"} )
 
-    triple_crown_header
     triple_crown_winner(batters, {:year_id => "2011", :league => "AL", :limit => 400} )
     triple_crown_winner(batters, {:year_id => "2011", :league => "NL", :limit => 400} )
     triple_crown_winner(batters, {:year_id => "2012", :league => "AL", :limit => 400} )
@@ -56,9 +55,6 @@ module Baseball
     team_slugging_percentage = batting_stats.team_slugging_percentage(batters, args)
     puts "\n"
     puts "#{args[:team_id]} Slugging Percentage in #{args[:year_id]} is #{Float("%.3g" % team_slugging_percentage)}%"
-  end
-
-  def self.triple_crown_header
     puts "\n"
     puts "Triple Crown Winners are..."
     puts "----------------------------\n"
